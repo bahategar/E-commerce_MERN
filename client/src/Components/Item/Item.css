@@ -1,0 +1,62 @@
+.card-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
+    flex-direction: column; /* Arrange items in a column */
+    width: 300px; /* Set a fixed width for each card */
+    height: 400px; /* Set a fixed height for each card */
+    border: 1px solid #ccc; /* Add a border for visual clarity */
+    margin: 20px auto; /* Add margin between cards */
+    overflow: hidden; /* Prevent image overflow */
+    text-align: center;
+  }
+=
+  .card-container .card__header,
+  .card-container .card__image,
+  .card-container .card__content,
+  .card-container .card__actions {
+    padding: 10px; /* Add padding to each section */
+  }
+  
+  .card-container .card__image img {
+    max-width: 150px; /* Ensure images don't exceed container width */
+    max-height: 100%; /* Ensure images don't exceed container height */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .product__title {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .product__price {
+    margin: 5px 0; /* Add margin to price */
+  }
+  
+  .product__description {
+    margin: 0; /* Remove default margin */
+  }
+
+  .card__actions{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .btn{
+    background-color: #007bff; /* Set button background color */
+    color: #fff; /* Set button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s ease; /* Add transition effect */
+    margin: 5px; /* Add margin to buttons */
+    padding: 5px 10px; /* Add padding to buttons */
+  }
+  .btn a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
